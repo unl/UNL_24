@@ -1,0 +1,22 @@
+= TIMELINE WORDPRESS THEME =
+
+* by JuliusDesign based on Twenty Eleven 1.2 > http://www.timeline-wp.com
+
+== ABOUT TIMELINE WP Plugin==
+
+
+
+Lightbox Plus
+
+http://wordpress.org/extend/plugins/lightbox-plus/
+
+
+vipers Video Quicktags
+
+http://wordpress.org/extend/plugins/vipers-video-quicktags/
+
+
+
+Audio Player
+
+http://wordpress.org/extend/plugins/audio-player/

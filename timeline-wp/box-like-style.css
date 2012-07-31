@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fan_box a:hover{
+  text-decoration: none;
+}
+.fan_box .full_widget{
+	height: 250px;
+	width: 230px !important;
+	border: 0 !important;
+	background: none !important;
+	position: relative;
+}
+
+.fan_box .connections_grid .grid_item {
+    width: 38px !important;
+}
+
+img {
+    width: 38px !important;
+}
+
+.connect_top{
+	background: #E7EBF2 !important;
+}
