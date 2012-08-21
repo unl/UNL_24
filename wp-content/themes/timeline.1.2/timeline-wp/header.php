@@ -95,7 +95,7 @@ $(document).ready(function(){
 	$(".anchor_post").each(function () {
 		var id = this.id;
 		
-		$("#"+id).click(function (){
+		$("#"+id).click(function (e){
 			
 			
 			$(".anchor_post").parent().removeClass("anchor_post_current");
@@ -114,9 +114,11 @@ $(document).ready(function(){
 				var position = p.position();
 
 
-				$('body,html').animate({
-					scrollTop: (position.top-60)
+				$('body').animate({
+					scrollTop: (position.top-30)
 				}, 800);
+				
+				e.preventDefault();
 			}
 			
 		});
