@@ -27,8 +27,9 @@
 </div>
 
 			<div id="site-generator">
-                <a href="http://www.timeline-wp.com/" target="_blank">Timeline WP</a> Ispired by <a href="http://www.facebook.com/about/timeline" target="_blank">Timeline Facebook</a> <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+                A day in the life at <a href="http://www.unl.edu/">University of Nebraska&ndash;Lincoln</a> on September 24, 2012. Layout inspired by <a href="http://www.facebook.com/about/timeline">Facebook Timeline</a>.
     </div>
+
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
