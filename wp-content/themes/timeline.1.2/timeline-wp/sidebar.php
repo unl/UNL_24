@@ -14,13 +14,18 @@ if ( 'content' != $current_layout ) :
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
         
-        <?php if(get_option('tl_fanpage_facebook')!="") { ?>
-		<script type="text/javascript">FB.init("1690883eb733618b294e98cb1dfba95a");</script>
-<fb:fan profile_id="<?php echo get_option('tl_fanpage_facebook');?>" stream="0" connections="10" logobar="0" width="230" height="250" css="<?php bloginfo('template_url'); ?>/box-like-style.css?5"></fb:fan>
-        <?php } ?>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=316823201746571";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like-box" data-href="http://www.facebook.com/unl.edu" data-width="220" data-show-faces="true" data-stream="false" data-header="true"></div>
         
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
+			    <!--
 				<aside id="archives" class="widget">
 					<h3 class="widget-title"><?php _e( 'Archives', 'twentyeleven' ); ?></h3>
 					<ul>
@@ -36,7 +41,7 @@ if ( 'content' != $current_layout ) :
 						<?php wp_meta(); ?>
 					</ul>
 				</aside>
-
+                -->
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->
 <?php endif; ?>
