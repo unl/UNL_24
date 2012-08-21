@@ -58,7 +58,7 @@ if (strpos(strtoupper($_SERVER['HTTP_USER_AGENT']), 'CHROME')==true)
 }
 ?>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
