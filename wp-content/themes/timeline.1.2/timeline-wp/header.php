@@ -184,12 +184,11 @@ $(document).ready(function(){
                 <li class="anchor_post_current"><a id="back-top" class='anchor_post' href="#top">Now</a></li>
                 <?php
                 global $wpdb;
-                $sql = "SELECT distinct date_format(post_date,'%M %Y') date,
-                date_format(post_date,'%m_%Y')  as link
-                FROM wp_posts WHERE post_type='post' and post_status='publish' order by date_format(post_date,'%Y/%m')desc";
+                $sql = "SELECT distinct post_date as date, id
+                FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc";
                 $results = $wpdb->get_results($sql);
                 foreach($results as $row):
-                echo "<li><a id='anchor_post_".++$count."' class='anchor_post' title='".$row->date."' href='#".$row->link."'>".$row->date."</a></li>";
+                    echo "<li><a id='anchor_post_".$row->id."' class='anchor_post' title='".mysql2date("F j, Y h:ia",$row->date)."' href='#post-".$row->id."'>".mysql2date("h:ia",$row->date)."</a></li>";
                 endforeach;
                 ?>
                 </ul>
