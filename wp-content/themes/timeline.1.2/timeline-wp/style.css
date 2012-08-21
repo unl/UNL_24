@@ -2879,7 +2879,6 @@ p.comment-form-comment {
 
 /* Site Generator Line */
 #site-generator {
-	visibility: hidden;
 	border-top: 1px solid #ddd;
 	color: #94A0C1;
 	font-size: 12px;
