@@ -28,7 +28,7 @@
 			
 			<div class="name-author"><?php the_author_posts_link(); ?></div>
             
-            <div class="date-post"><?php the_time('F j,  Y') ?></div>
+            <div class="date-post"><?php the_time('h:ia') ?></div>
             
             </div>
             
