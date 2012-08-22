@@ -265,7 +265,7 @@ $(document).ready(function(){
 
             <div id="site-featured">
             <?php 
-			$thumbnails = get_posts('numberposts=4&category_name='.get_option('tl_category_name_in_evidence'));
+			$thumbnails = get_posts('numberposts=4&category_name=photos');
 			foreach ($thumbnails as $thumbnail) 
 			{
 				if ( has_post_thumbnail($thumbnail->ID)) 
