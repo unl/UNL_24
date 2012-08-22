@@ -1,2 +1,4 @@
-*.espressostorage
+wp-config.php
+.DS_Store
+
 /\#UNL24.esproj/user.smeranda.espressostorage
