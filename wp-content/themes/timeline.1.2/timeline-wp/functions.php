@@ -359,7 +359,7 @@ add_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
 function twentyeleven_page_menu_args( $args ) {
-	$args['show_home'] = true;
+	$args['show_home'] = false;
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'twentyeleven_page_menu_args' );
