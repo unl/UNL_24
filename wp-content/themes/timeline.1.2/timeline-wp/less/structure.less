@@ -224,11 +224,34 @@
 	width: auto;
 }
 
+
+
+/*
+*
+* Media Queries
+*
+*/
 .768() {
 
 }
 
 .1000() {
-
+    .inner_wrapper {
+        width: 950px;
+        margin: 0 auto;
+    }
 }
 
+// This is what's outputed in the media queries
+@media (min-width: 768px) {
+    .768();   
+}
+@media (min-width: 1000px) {
+    .1000();
+}
+
+// Output the media queries without the media queries for IE8
+.ie8 {
+    .768();
+    .1000();
+}

@@ -1,11 +1,13 @@
+@import url('vars.less');
+
 body, input, textarea {
 	color: #333333;
-	font: 13px "tahoma",verdana,arial,sans-serif;
+	font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.625;
 }
 body {
-	background: #E7EBF2;
+	background: @lightNeutral;
 }
 #message {
 	background-color: #FFFFFF;
@@ -121,8 +123,7 @@ ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
-sup,
-sub {
+sup, sub {
 	font-size: 10px;
 	height: 0;
 	line-height: 1;
@@ -137,9 +138,7 @@ sub {
 }
 
 /* Forms */
-input[type=text],
-input[type=password],
-textarea {
+input[type=text], input[type=password], textarea {
 	background: #fafafa;
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
@@ -147,8 +146,7 @@ textarea {
 	border: 1px solid #C4CDE0;
 	color: #888;
 }
-input[type=text]:focus,
-textarea:focus {
+input[type=text]:focus, textarea:focus {
 	color: #373737;
 }
 textarea {
@@ -159,30 +157,12 @@ input[type=text] {
 	padding: 3px;
 	width: 50%;
 }
-input#s {
-    border: 1px solid #3B5998;
-    border-radius: 2px 2px 2px 2px;
-    font-size: 11px;
-    height: 12px;
-    line-height: 1.2em;
-    margin-top: 9px;
-	margin-left: 5px;
-    padding: 4px 24px 4px 4px;
-    width: 220px;
-}
-input#searchsubmit {
-	position: relative;
-    right: 26px;
-    top: 4px;
-}
 
 /* Links */
 a {
-	color: #3B5998;
+	color: #ac0302;
 	text-decoration: none;
 }
-a:focus,
-a:active,
-a:hover {
+a:focus, a:active, a:hover {
 	text-decoration: underline;
 }

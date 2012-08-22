@@ -1,0 +1,118 @@
+@import url(vars.less);
+
+/*
+*
+* Main area
+*
+*/
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	border-top: 2px solid #bbb;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	height: 460px;
+	width: 950px;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C4CDE0;
+	border-width: 1px 1px 2px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px
+}
+/* Make sure the logo and search form don't collide */
+.logo{
+	float:left;
+	margin-top: 10px;
+    padding-right: 10px;
+	}
+
+
+.one-column #branding #searchform {
+	right: 40px;
+	top: 4em;
+}
+
+#site-title {
+	float: left;
+    margin-left: 145px;
+    padding: 0.66em 0 0;
+    
+    a {
+    	color: @primaryColor;
+    	font-size: 30px;
+    	font-weight: bold;
+    	line-height: 36px;
+    	text-decoration: none;
+    	
+    	&:hover, &:focus, &:active {
+    	    color: lighten(@primaryColor, 10%);
+    	}
+    }
+}
+#site-description {
+	color: #7A7A7A;
+    float: left;
+    font-size: 14px;
+    margin-left: 145px;
+
+}
+#site-featured{
+	float: right;
+    height: 123px;
+    width: 440px;
+}
+
+#photo-header{
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 125px;
+    padding: 3px;
+    position: absolute;
+    top: 207px;
+    width: 125px;	
+	border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+
+	}
+
+.featured-box .featured-size{
+	border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    height: 80px !important;
+    margin-top: 5px;
+    padding: 1px;
+    width: 95px !important;
+}
+
+.featured-box{
+	float: left;
+    height: 120px;
+    overflow: hidden;
+    width: 109px;
+}
+
+.featured-box .title-featured{
+	color: #3B5998;
+    display: block;
+    font-size: 10px;
+    line-height: 11px;
+    padding-top: 5px;
+}
+
+#site-featured .featured-box a:hover{
+	text-decoration: none;
+	color: #94A0C1;
+}
+
+#branding img {
+	height: auto;
+	margin-bottom: -7px;
+	width: 100%;
+}

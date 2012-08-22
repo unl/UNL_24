@@ -1,139 +1,39 @@
-/* =Header
------------------------------------------------ */
+@import url(vars.less);
 
-#branding {
-	border-top: 2px solid #bbb;
-	padding-bottom: 10px;
-	position: relative;
-	z-index: 2;
-	margin: 0 auto;
-	height: 460px;
-	width: 950px;
-	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #C4CDE0;
-	border-width: 1px 1px 2px;
-	-webkit-border-radius: 0px 0px 3px 3px;
-    -moz-border-radius: 0px 0px 3px 3px;
-    border-radius: 0px 0px 3px 3px
-}
-/* Make sure the logo and search form don't collide */
-.logo{
-	float:left;
-	margin-top: 10px;
-    padding-right: 10px;
-	}
-
-
-.one-column #branding #searchform {
-	right: 40px;
-	top: 4em;
-}
-
-#site-title {
-	float: left;
-    margin-left: 145px;
-    padding: 0.66em 0 0;
-}
-#site-title a {
-	color: #3B5998;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 36px;
-	text-decoration: none;
-}
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
-	color: #94A0C1;
-}
-#site-description {
-	color: #7A7A7A;
-    float: left;
-    font-size: 14px;
-    margin-left: 145px;
-
-}
-#site-featured{
-	float: right;
-    height: 123px;
-    width: 440px;
-}
-
-#photo-header{
-	background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    float: left;
-    height: 125px;
-    padding: 3px;
-    position: absolute;
-    top: 207px;
-    width: 125px;	
-	border-radius: 2px 2px 2px 2px;
-	-webkit-border-radius: 2px 2px 2px 2px;
-	-moz-border-radius: 2px 2px 2px 2px;
-
-	}
-
-.featured-box .featured-size{
-	border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
-    height: 80px !important;
-    margin-top: 5px;
-    padding: 1px;
-    width: 95px !important;
-}
-
-.featured-box{
-	float: left;
-    height: 120px;
-    overflow: hidden;
-    width: 109px;
-}
-
-.featured-box .title-featured{
-	color: #3B5998;
-    display: block;
-    font-size: 10px;
-    line-height: 11px;
-    padding-top: 5px;
-}
-
-#site-featured .featured-box a:hover{
-	text-decoration: none;
-	color: #94A0C1;
-}
-
-#branding img {
-	height: auto;
-	margin-bottom: -7px;
-	width: 100%;
-}
-
-/* Assistive text - skip links */
+/*
+*
+* Skip Links
+*
+*/
 .assistive-text {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 }
-#access a.assistive-text:active,
-#access a.assistive-text:focus {
-	background: #eee;
-	border-bottom: 1px solid #ddd;
-	color: #1982d1;
-	clip: auto !important;
-	font-size: 12px;
-	position: absolute;
-	text-decoration: underline;
-	top: 0;
-	left: 7.6%;
+#access {
+
+    a.assistive-text:active, a.assistive-text:focus {
+    	background: #eee;
+    	border-bottom: 1px solid #ddd;
+    	color: #1982d1;
+    	clip: auto !important;
+    	font-size: 12px;
+    	position: absolute;
+    	text-decoration: underline;
+    	top: 0;
+    	left: 7.6%;
+    }
 }
 
-/* =Menu
--------------------------------------------------------------- */
+/*
+*
+* Navigation Bar
+*
+*/
 
 #access {
-	background: #3B5998; /* Show a solid color for older browsers */
-	border-bottom: 1px solid #133783;
+	background: @primaryColor; /* Show a solid color for older browsers */
+	border-bottom: 1px solid darken(@primaryColor, 10%);
 	clear: both;
 	display: block;
 	float: left;
@@ -142,98 +42,75 @@
 	height: 40px;
 	position: fixed;
 	width: 100%;
-}
-#access ul {
-	font-size: 13px;
-	list-style: none;
-	margin: 0 0 0 -0.8125em;
-	padding-left: 0;
-}
-#access li {
-	float: left;
-	position: relative;
-}
-#access a {
-	color: #eee;
-	display: block;
-	line-height: 3.15em;
-	padding: 0 1.2125em;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #333333;
-	-moz-text-shadow: 1px 1px 1px #333333;
-	-webkit-text-shadow: 1px 1px 1px #333333;
 	
+	ul {
+    	font-size: 13px;
+    	list-style: none;
+    	margin: 0 0 0 -0.8125em;
+    	padding-left: 0;
+    	
+    }
+    
+    li {
+    	float: left;
+    	position: relative;
+    	
+    	&:hover, &.current_page_item {
+    	
+    	    a, a:focus {
+    	        background-color: darken(@primaryColor, 5%);
+    	    }
+    	}
+    }
+    
+    a {
+    	color: #eee;
+    	display: block;
+    	line-height: 3.15em;
+    	padding: 0 1.2125em;
+    	text-decoration: none;
+    	text-shadow: 1px 1px 1px #333333;
+    	-moz-text-shadow: 1px 1px 1px #333333;
+    	-webkit-text-shadow: 1px 1px 1px #333333;
+    	
+    }
 }
 
-#access ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 3.15em;
-	left: 0;
-	width: 188px;
-	z-index: 99999;
-}
-#access ul ul ul {
-	left: 100%;
-	top: 0;
-}
-#access ul ul a {
-	background: #3B5998;
-	border-bottom: 1px solid #133783;
-	color: #FFFFFF;
-	font-size: 13px;
-	font-weight: normal;
-	height: auto;
-	line-height: 1.4em;
-	padding: 10px 10px;
-	width: 168px;
-}
-#access li:hover > a,
-#access ul ul :hover > a,
-#access a:focus {
-	background-color: #4B67A1;
-}
-#access li:hover > a,
-#access a:focus {
-	background-color: #4B67A1; /* Show a solid color for older browsers */
-	color: #FFFFFF;
-}
-#access ul li:hover > ul {
-	display: block;
-}
-#access .current_page_item > a,
-#access .current_page_ancestor > a {
-	font-weight: bold;
-	background-color: #4B67A1;
+#menu-item-55  {
 
-}
-
-
-#menu-item-55 a,
-#menu-item-55 a:focus{
-	background-image: url(images/down.png);
-	background-repeat:no-repeat;
-	background-position: 105% 50%;
+    a, a:focus{
+    	background-image: url(images/down.png);
+    	background-repeat:no-repeat;
+    	background-position: 105% 50%;
 	}
+}
 
-/* Search Form */
-#branding #searchform {
-	position: absolute;
-    right: 1.6%;
-    text-align: right;
-	top: 22em;
+/*
+*
+* Timeline navigation
+*
+*/
+
+#box-scrool-bar {
+    display: none;
+}
+
+/*
+*
+* Search Form
+*
+*/
+
+#searchform {
+	text-align: right;
 	color: #FFFFFF;
+	
+	div {
+	    margin: 0;
+	}
 }
-#branding #searchform div {
-	margin: 0;
-}
-#branding #s {
-	float: right;
+
+#s {
 	-webkit-transition-duration: 400ms;
 	-webkit-transition-property: width, background;
 	-webkit-transition-timing-function: ease;
@@ -243,31 +120,46 @@
 	-o-transition-duration: 400ms;
 	-o-transition-property: width, background;
 	-o-transition-timing-function: ease;
-	width: 72px;
+	width: 10%;
+	border: 1px solid @primaryColor;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 11px;
+    height: 12px;
+    line-height: 1.2em;
+    margin-top: 9px;
+	margin-left: 5px;
+    padding: 4px 24px 4px 4px;
+	
+	&:focus {
+    	background-color: #f9f9f9;
+    	width: 20%;
+    }
 }
-#branding #s:focus {
-	background-color: #f9f9f9;
-	width: 196px;
+
+#searchsubmit {
+    position: relative;
+    right: 26px;
+    top: 4px;
 }
-#branding #searchsubmit {
-	display: none;
+
+.only-search {
+    #searchform {
+    	top: 5px;
+    	z-index: 1;
+    	
+    	#s {
+        	background-color: #666;
+        	border-color: #000;
+        	color: #222;
+        	
+        	&:focus {
+            	background-color: #bbb;
+            }
+        }
+    }
 }
-#branding .only-search #searchform {
-	top: 5px;
-	z-index: 1;
-}
-#branding .only-search #s {
-	background-color: #666;
-	border-color: #000;
-	color: #222;
-}
-#branding .only-search #s,
-#branding .only-search #s:focus {
-	width: 85%;
-}
-#branding .only-search #s:focus {
-	background-color: #bbb;
-}
+
+// are these needed?
 #branding .with- #searchform {
 	top: auto;
 	bottom: -27px;
@@ -275,4 +167,98 @@
 }
 #branding .only-search + #access div {
 	padding-right: 205px;
+}
+
+/*
+*
+* Media Queries
+*
+*/
+.768() {
+
+}
+
+.1100() {
+    
+    #timeline-bar{
+    	width: 950px;
+    	margin: 0 auto;	
+	}
+	
+	#box-scrool-bar {
+        display: block;
+        height: 268px;
+        margin-left: 955px;
+        overflow: hidden;
+        position: fixed;
+        top: 45px;
+	
+        .timeline-scroll-bar {
+        	float: right;
+            padding-left: 2px;
+            padding-right: 0;
+            padding-top: 4%;
+            width: 160px;
+            
+            ul {
+            	list-style-type: none;
+            	margin: 0;
+                padding: 0;
+            
+                li {
+                	border-left: 5px solid darken(@lightNeutral, 20%);
+                    float: none;
+                    margin: 1px;
+                    padding-left: 5px;
+                    
+                    &:hover{
+                    	border-color: @primaryColor;
+                        float: none;
+                        margin: 1px;
+                        padding-left: 5px;
+                    	background-color: #E7EBF2;
+                    
+                    }
+                    
+                    a {
+                    	color: darken(@lightNeutral, 70%);
+                    	font-size: 11px;
+                    	line-height: 25px;
+                    	text-shadow: 0px 0px 0px #000000;
+                    	padding: 0px;
+                    	background-color: darken(@lightNeutral, 2.5%);
+                    	
+                    	&:hover {
+                    	    color: @primaryColor;
+                        	background-color: darken(@lightNeutral, 5%);
+                    	}
+                    
+                    }
+                    
+                    &.anchor_post_current {
+                        border-color: @primaryColor;
+                        
+                        a {
+                            color: @primaryColor;
+                            font-weight: bold;
+                        }
+                    }
+                }	                
+        	}
+    	}
+    }
+}
+
+// This is what's outputed in the media queries
+@media (min-width: 768px) {
+    .768();   
+}
+@media (min-width: 1100px) {
+    .1100();
+}
+
+// Output the media queries without the media queries for IE8
+.ie8 {
+    .768();
+    .1100();
 }
