@@ -175,21 +175,24 @@ $(document).ready(function(){
 			
                        
             <div id="box-scrool-bar">
-
-            <div class="timeline-scroll-bar">
-                <ul>
-                <li class="anchor_post_current"><a id="back-top" class='anchor_post' href="#top">Now</a></li>
-                <?php
-                global $wpdb;
-                $sql = "SELECT distinct post_date as date, id
-                FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc";
-                $results = $wpdb->get_results($sql);
-                foreach($results as $row):
-                    echo "<li><a id='anchor_post_".$row->id."' class='anchor_post' title='".mysql2date("F j, Y h:ia",$row->date)."' href='#post-".$row->id."'>".mysql2date("h:ia",$row->date)."</a></li>";
-                endforeach;
-                ?>
-                </ul>
-            </div><!-- #timeline-scroll-bar -->
+                <div class="timeline-scroll-bar">
+                    <ul>
+                        <li class="anchor_post_current">
+                            <a id="back-top" class='anchor_post' href="#top">Now</a>
+                        </li>
+                        <?php
+                        global $wpdb;
+                        $sql = "SELECT distinct post_date as date, id
+                        FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc";
+                        $results = $wpdb->get_results($sql);
+                        foreach($results as $row):
+                            echo "<li>
+                                    <a id='anchor_post_".$row->id."' class='anchor_post' title='".mysql2date("F j, Y h:ia",$row->date)."' href='#post-".$row->id."'>".mysql2date("h:ia",$row->date)."</a>
+                                 </li>";
+                        endforeach;
+                        ?>
+                    </ul>
+                </div><!-- #timeline-scroll-bar -->
             </div><!-- #box-scrool-bar -->
             
             
