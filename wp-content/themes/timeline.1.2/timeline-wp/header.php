@@ -261,49 +261,6 @@ $(document).ready(function(){
            
            
             </hgroup>
-            
-                       
-
-<div id="social-icons">
-
-<h3 class="social-icons-title">Follow me on Social Media</h3>
-<?php if(get_option('tl_facebook_enabled')=='checked'){ ?>
-<a title="Follow on Facebook" href="<?php echo get_option('tl_facebook');?>" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/facebook.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_twitter_enabled')=='checked'){ ?>
-<a href="<?php echo get_option('tl_twitter');?>" title="Follow on Twitter" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/twitter.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_linkedin_enabled')=='checked'){ ?>
-<a title="Follow on Linkedin" href="<?php echo get_option('tl_linkedin');?>" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/linkedin.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_youtube_enabled')=='checked'){ ?>
-<a title="Follow on YouTube" href="<?php echo get_option('tl_youtube');?>" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/youtube.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_google_plus_enabled')=='checked'){ ?>
-<a href="<?php echo get_option('tl_google_plus');?>" title="Follow on Google+" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/google-plus.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_email_rss_enabled')=='checked'){ ?>
-<a title="Follow with Email" href="<?php echo get_option('tl_email_rss');?>" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/email-rss.gif" /></a> 
-<?php } ?>
-
-<?php if(get_option('tl_feed_rss_enabled')=='checked'){ ?>
-<a href="<?php echo get_option('tl_feed_rss');?>" title="Follow with Feed RSS" target="_blank">
-<img src="<?php bloginfo('template_url'); ?>/images/social-icons/feed-rss.gif" /></a>
-<?php } ?>
-
-
-</div>
 
 
             <div id="site-featured">
