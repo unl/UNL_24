@@ -43,7 +43,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="shorcut icon" type="image/x-ico" href="http://www.unl.edu/wdn/templates_3.1/images/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/css/all.css" />
 
 <?php 
 if (strpos(strtoupper($_SERVER['HTTP_USER_AGENT']), 'CHROME')==true)
