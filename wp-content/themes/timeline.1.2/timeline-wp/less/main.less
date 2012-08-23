@@ -12,91 +12,89 @@
 #branding {
 	border-top: 2px solid #bbb;
 	padding-bottom: 10px;
-	position: relative;
 	z-index: 2;
 	margin: 0 auto;
-	height: 460px;
-	width: 950px;
+	width: 100%;
 	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #C4CDE0;
+    border: 1px solid darken(@lightNeutral, 20%);
 	border-width: 1px 1px 2px;
-	-webkit-border-radius: 0px 0px 3px 3px;
-    -moz-border-radius: 0px 0px 3px 3px;
-    border-radius: 0px 0px 3px 3px
-}
-/* Make sure the logo and search form don't collide */
-.logo{
-	float:left;
-	margin-top: 10px;
-    padding-right: 10px;
-	}
-
-
-.one-column #branding #searchform {
-	right: 40px;
-	top: 4em;
-}
-
-#site-title {
-	float: left;
-    margin-left: 145px;
-    padding: 0.66em 0 0;
+    border-radius: 0px 0px 3px 3px;
+    display: inline-block;
     
-    a {
-    	color: @primaryColor;
-    	font-size: 30px;
+    hgroup {
+    	margin: 0 2%;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    #photo-header{
+    	background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        float: left;
+        padding: 3px;
+        width: 30%;
+        max-width: 125px;	
+    	border-radius: 2px 2px 2px 2px;
+    	-webkit-border-radius: 2px 2px 2px 2px;
+    	-moz-border-radius: 2px 2px 2px 2px;
+    	float: left;
+    	margin-top: -10%;
+    	position: relative;
+    }
+    
+    .text_wrapper {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    #site-title {
+        margin: 15px 0 0 0;
+        color: @darkText;
+    	font-size: 20px;
     	font-weight: bold;
-    	line-height: 36px;
+    	line-height: 22px;
     	text-decoration: none;
-    	
-    	&:hover, &:focus, &:active {
-    	    color: lighten(@primaryColor, 10%);
-    	}
+    }
+    
+    #site-description {
+    	color: #7A7A7A;
+        font-size: 12px;
+    
+    }
+    
+    img {
+        height: auto;
+    	margin-bottom: -7px;
+    	width: 100%;
     }
 }
-#site-description {
-	color: #7A7A7A;
-    float: left;
-    font-size: 14px;
-    margin-left: 145px;
 
-}
-#site-featured{
-	float: right;
-    height: 123px;
-    width: 440px;
-}
+#site-featured {
+    padding: 0 1%;
+    box-sizing: border-box;
 
-#photo-header{
-	background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    float: left;
-    height: 125px;
-    padding: 3px;
-    position: absolute;
-    top: 207px;
-    width: 125px;	
-	border-radius: 2px 2px 2px 2px;
-	-webkit-border-radius: 2px 2px 2px 2px;
-	-moz-border-radius: 2px 2px 2px 2px;
+    .featured-box {
+        width: 24%;
+        float: left;
+        margin-left: 1%;
+        
+        img {
+            width: 96%;
+            height: auto;
+            max-width: 100% !important;
+            padding: 2%;
+            border: 1px solid darken(@lightNeutral, 20%);
+            box-sizing: border-box;
+        }
+        
+        a:hover{
+        	text-decoration: none;
+        	color: #94A0C1;
+        }
+    }
 
-	}
+}	
 
-.featured-box .featured-size{
-	border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
-    height: 80px !important;
-    margin-top: 5px;
-    padding: 1px;
-    width: 95px !important;
-}
-
-.featured-box{
-	float: left;
-    height: 120px;
-    overflow: hidden;
-    width: 109px;
-}
 
 .featured-box .title-featured{
 	color: #3B5998;
@@ -106,13 +104,51 @@
     padding-top: 5px;
 }
 
-#site-featured .featured-box a:hover{
-	text-decoration: none;
-	color: #94A0C1;
+
+.480() {
+    #branding {
+    
+        hgroup {
+            width: 50%;
+            float: left;
+        }
+        
+        #site-featured{
+        	float: right;
+            display: inline-block;
+            width: 46%;
+            margin-top: 1%;
+        }
+
+    }
 }
 
-#branding img {
-	height: auto;
-	margin-bottom: -7px;
-	width: 100%;
+.768() {
+    #branding {
+    
+    }
+}
+
+.1100() {
+    
+
+}
+
+// This is what's outputed in the media queries
+
+@media (min-width: 480px) {
+    .480();   
+}
+@media (min-width: 768px) {
+    .768();   
+}
+@media (min-width: 1100px) {
+    .1100();
+}
+
+// Output the media queries without the media queries for IE8
+.ie8 {
+    .480();
+    .768();
+    .1100();
 }

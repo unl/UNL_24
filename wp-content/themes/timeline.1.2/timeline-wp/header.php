@@ -207,7 +207,7 @@ $(document).ready(function(){
 </nav>
 
 
-<div id="page" class="hfeed timeline-separator">
+<div id="page" class="hfeed timeline-separator inner_wrapper">
            
 <header id="branding" role="banner">
 			      
@@ -217,7 +217,7 @@ $(document).ready(function(){
 				$header_image = get_header_image();
 				if ( ! empty( $header_image ) ) :
 			?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-identity">
 				<?php
 					// The header image
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
@@ -230,6 +230,7 @@ $(document).ready(function(){
 					else : ?>
 					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 				<?php endif; // end check for featured image or standard header ?>
+				
 			</a>
 			<?php endif; // end check for removed header image ?>
 
@@ -244,23 +245,17 @@ $(document).ready(function(){
 				else :
 			?>
 			<?php endif; ?>
-
-
-			<hgroup>
+            <hgroup>
             
-            <div id="photo-header"><img src="<?php bloginfo('template_url'); ?>/images/timeline-photo.jpg"></div>
-            
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+                <div id="photo-header"><img src="<?php bloginfo('template_url'); ?>/images/timeline-photo.jpg"></div>
+                <div class="text_wrapper">
+    				<h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
+    				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</div>
            
-                     
-           	<?php 
-            // Widget for Top Category
-            dynamic_sidebar('sidebar-category-top'); 
-            ?>
-           
-           
-            </hgroup>
+             </hgroup>
+
+			
 
 
             <div id="site-featured">
@@ -272,11 +267,19 @@ $(document).ready(function(){
 				{
 					echo '<div class="featured-box"><a href="' . get_permalink( $thumbnail->ID ) . '" title="' . esc_attr( $thumbnail->post_title ) . '">';
 					echo get_the_post_thumbnail($thumbnail->ID, 'thumbnail',array('class' => 'featured-size') );
-					echo '</a><a class="title-featured" href="' . get_permalink( $thumbnail->ID ) . '">'.esc_attr( $thumbnail->post_title ).'</a></div>';
+					echo '</div>';
 				}
 			}
 			?>
             
+            </div>
+            <div id="site-categories">
+           	<?php 
+            // Widget for Top Category
+            dynamic_sidebar('sidebar-category-top'); 
+            ?>
+           
+           
             </div>
                        
 
