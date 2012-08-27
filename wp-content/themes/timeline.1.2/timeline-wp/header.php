@@ -183,7 +183,7 @@ $(document).ready(function(){
                         <?php
                         global $wpdb;
                         $sql = "SELECT distinct post_date as date, id
-                        FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc";
+                        FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc LIMIT 10";
                         $results = $wpdb->get_results($sql);
                         foreach($results as $row):
                             echo "<li>
@@ -267,7 +267,7 @@ $(document).ready(function(){
 				{
 					echo '<div class="featured-box"><a href="' . get_permalink( $thumbnail->ID ) . '" title="' . esc_attr( $thumbnail->post_title ) . '">';
 					echo get_the_post_thumbnail($thumbnail->ID, 'thumbnail',array('class' => 'featured-size') );
-					echo '</div>';
+					echo '</a></div>';
 				}
 			}
 			?>
