@@ -289,4 +289,4 @@ $(document).ready(function(){
 
 
 
-	<div id="main">
+	<div id="main" class="inner_wrapper">
