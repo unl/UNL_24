@@ -13,7 +13,7 @@
     <div class="author-info">
           <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 30 ) ); ?>
 			
-			<div class="name-author"><?php the_author_posts_link(); ?></div>
+			<h2 class="entry-title"><?php the_title(); ?></h2>
             
             <div class="date-post"><?php the_time('F j,  Y') ?></div>
             
@@ -24,7 +24,7 @@
         <?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
         
 	</div><!-- .entry-meta -->
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

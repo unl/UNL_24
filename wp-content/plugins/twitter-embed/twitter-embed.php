@@ -89,12 +89,12 @@ class Twitter_Embed_Plugin {
 		
 		if ( ! $tweet || empty( $tweet ) ) {
 
-			$query_args = array( 'id' => $tweet_id, 'lang' => 'en', 'maxwidth' => $content_width );
-			$response = wp_remote_get( add_query_arg( $query_args, 'https://api.twitter.com/1/statuses/oembed.json' ) );
+			//$query_args = array( 'id' => $tweet_id, 'lang' => 'en', 'maxwidth' => $content_width );
+			$response = wp_remote_get( 'https://api.twitter.com/1/statuses/show/'.$tweet_id.'.json'  );
 			if ( ! is_wp_error( $response ) ) {
 				$body = wp_remote_retrieve_body( $response );
 				$tweet = json_decode( $body );
-				$tweet = $tweet->html;
+				$tweet = $tweet->text;
 				
 				update_post_meta( $post->ID, $meta_key, $tweet );
 			} else {
