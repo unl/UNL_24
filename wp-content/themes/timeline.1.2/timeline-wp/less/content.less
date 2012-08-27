@@ -251,9 +251,9 @@ dl.gallery-item {
 .wp_bannerize_homepage img{
    border: 1px solid #C4CDE0;
 	height: auto;
-    max-width: 99%;
+    max-width: 100%;
     padding: 2px;
-	
+	width: 100%;
 	opacity: 1;
 	-moz-transition: opacity 1s ease 0s;
 	-webkit-transition: opacity 1s ease 0s;
@@ -261,6 +261,11 @@ dl.gallery-item {
 	transition: opacity 1s ease 0s;
 }
 
+// Reset the twitter logo images
+.bbp-actions img {
+    width: auto;
+    max-width: auto;
+}
 
 
 
@@ -644,38 +649,36 @@ blockquote.pull {
 .768() {
     .hentry {
         width: 48%;
-    }
-    
-    .align-left {
-    	float: left;
-    	clear: left;
     	position: relative;
     	
     	&:before {
     	    content: '';
     	    position: absolute;
-    	    top: 15px;
-    	    left: 100%;
-    	    background: url('images/corner-left.png') no-repeat;
     	    width: 25px;
     	    height: 15px;
     	}
-    }
-    
-    .align-right {
-    	float: right;
-    	clear: right;
-    	position: relative;
-    	
-    	&:before {
-    	    content: '';
-    	    position: absolute;
-    	    top: 35px;
-    	    right: 100%;
-    	    background: url('images/corner-right.png') no-repeat;
-    	    width: 25px;
-    	    height: 15px;
-    	}
+        
+        &:nth-of-type(odd) {
+        	float: left;
+        	clear: left;
+        	
+        	&:before {
+        	    top: 15px;
+        	    left: 100%;
+        	    background: url('images/corner-left.png') no-repeat;
+        	}
+        }
+        
+        &:nth-of-type(even) {
+            float: right;
+        	clear: right;
+        	
+        	&:before {
+        	    top: 35px;
+        	    right: 100%;
+        	    background: url('images/corner-right.png') no-repeat;
+        	}
+        }
     }
 
 }
