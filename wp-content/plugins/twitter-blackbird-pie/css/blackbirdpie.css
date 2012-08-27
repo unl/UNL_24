@@ -1,5 +1,5 @@
 .bbp-actions {padding-bottom:.5em;}
-.bbp-actions a{color:#999 !important; text-decoration:none; margin-left:-0.5em;}
+.bbp-actions a{color:#999 !important; text-decoration:none;}
 .bbp-actions a:hover{color:#666 !important; text-decoration:none !important;}
 .bbp-actions a span em{text-indent:-99999px;outline:none;background:transparent url(twitter-icons.png) no-repeat;width:15px;height:15px;margin:0 2px 0 2px;display:block;margin-left:0em;}
 .bbp-actions a span em{display:inline-block;vertical-align:baseline;margin-bottom:-3.5px;margin-right:3px;position:relative;}

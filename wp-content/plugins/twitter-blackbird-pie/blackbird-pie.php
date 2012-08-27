@@ -311,12 +311,8 @@ class BlackbirdPie {
             #bbpBox_$id a:hover { text-decoration:underline; }
         </style>
 		
-		
-
-		
-		
         <div id='bbpBox_$id' class='bbpBox' style='margin-bottom:20px;'>
-            <div style='background:#fff; padding:10px; margin:0; min-height:48px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border: 1px dashed #D5D5D5; -moz-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);
+            <div style='background:#fff;  padding:10px; margin:0; min-height:48px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border: 1px dashed #D5D5D5; -moz-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);
 -webkit-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);
 box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);'>
                 <span style='width:100%; font-size:18px; line-height:22px;'>
@@ -325,15 +321,6 @@ box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);'>
                 <div class='bbp-actions' style='font-size:12px; width:100%; padding:5px 0; margin:0 0 10px 0; border-bottom:1px solid #e6e6e6;'>
                     <img align='top' src='http://g.etfv.co/http://www.twitter.com' />
                     <a style='margin-left:0.2em;' title='tweeted on {$date}' href='{$url}' target='_blank'>{$time_ago}</a> via {$source}
-                    <a href='{$reply_url}' class='bbp-action bbp-reply-action' title='Reply'>
-                        <span><em style='margin-left: 1em;'></em><strong>Reply</strong></span>
-                    </a>
-                    <a href='{$retweet_url}' class='bbp-action bbp-retweet-action' title='Retweet'>
-                        <span><em style='margin-left: 1em;'></em><strong>Retweet</strong></span>
-                    </a>
-                    <a href='{$favorite_url}' class='bbp-action bbp-favorite-action' title='Favorite'>
-                        <span><em style='margin-left: 1em;'></em><strong>Favorite</strong></span>
-                    </a>
                 </div>
                 <div style='float:left; padding:0; margin:0'>
                     <a href='{$profile_url}'>
@@ -344,6 +331,17 @@ box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);'>
                     <a style='font-weight:bold' href='{$profile_url}'>@{$name}</a>
                     <div style='margin:0; margin-top:-2px'>{$real_name}</div>
                 </div>
+				<div class='bbp-actions' style='float:right; padding:0; margin:0;font-size: 12px;'>
+				<a href='{$reply_url}' class='bbp-action bbp-reply-action' title='Reply'>
+                        <span><em style='margin-left: 1em;'></em><strong>Reply</strong></span>
+                    </a>
+                    <a href='{$retweet_url}' class='bbp-action bbp-retweet-action' title='Retweet'>
+                        <span><em style='margin-left: 1em;'></em><strong>Retweet</strong></span>
+                    </a>
+                    <a href='{$favorite_url}' class='bbp-action bbp-favorite-action' title='Favorite'>
+                        <span><em style='margin-left: 1em;'></em><strong>Favorite</strong></span>
+                    </a>
+				</div>
                 <div style='clear:both'></div>
             </div>
         </div>
