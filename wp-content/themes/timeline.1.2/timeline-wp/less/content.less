@@ -43,6 +43,7 @@
 	margin: 13px 0;
 	padding: 10px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	-webkit-border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
@@ -55,9 +56,9 @@
 
 
 	
-
+/*
 .corner-left{
-	background-image: url("images/corner-left.png");
+	background-image: url("images/corner-left.gif");
     background-repeat: no-repeat;
     display: block;
     height: 15px;
@@ -69,7 +70,7 @@
 	
 	
 .corner-right{
-    background-image: url("images/corner-right.png");
+    background-image: url("images/corner-right.gif");
     background-repeat: no-repeat;
     display: block;
     height: 15px;
@@ -78,7 +79,7 @@
     top: 60px;
     width: 18px;
 	}		
-
+*/
 .blog .sticky .entry-header .entry-meta {
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -642,23 +643,47 @@ blockquote.pull {
 
 .768() {
     .hentry {
-        width: 47%;
+        width: 48%;
     }
     
     .align-left {
     	float: left;
     	clear: left;
+    	position: relative;
+    	
+    	&:before {
+    	    content: '';
+    	    position: absolute;
+    	    top: 15px;
+    	    left: 100%;
+    	    background: url('images/corner-left.png') no-repeat;
+    	    width: 25px;
+    	    height: 15px;
+    	}
     }
     
     .align-right {
     	float: right;
     	clear: right;
+    	position: relative;
+    	
+    	&:before {
+    	    content: '';
+    	    position: absolute;
+    	    top: 35px;
+    	    right: 100%;
+    	    background: url('images/corner-right.png') no-repeat;
+    	    width: 25px;
+    	    height: 15px;
+    	}
     }
 
 }
 
 .1100() {
-    
+    .hentry {
+        width: 457px;
+    }
 
 }
 
