@@ -33,8 +33,6 @@ get_header(); ?>
 					</h1>
 				</header>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
                 <?php
                 global $post_align;
 				$post_align=0;

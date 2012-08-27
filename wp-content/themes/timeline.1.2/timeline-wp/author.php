@@ -36,8 +36,6 @@ get_header(); ?>
 					rewind_posts();
 				?>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
 				<?php
 				// If a user has filled out their description, show a bio on their entries.
 				if ( get_the_author_meta( 'description' ) ) : ?>

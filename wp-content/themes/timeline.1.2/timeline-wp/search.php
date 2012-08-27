@@ -18,8 +18,6 @@ get_header(); ?>
 					<h1 class="page-in-title"><?php printf( __( 'Search Results for: %s', 'twentyeleven' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
 				<?php
                 global $post_align;
 				$post_align=0;
