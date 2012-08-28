@@ -305,7 +305,7 @@ class BlackbirdPie {
 
         $tweet = $tweet_details['tweet_text'];
 		
-        $tweetHTML = "<!-- tweet id : $id -->
+        $tweetHTML = "<!-- tweet id : $id --> 
         <style type='text/css'>
             #bbpBox_$id a { text-decoration:none; }
             #bbpBox_$id a:hover { text-decoration:underline; }
