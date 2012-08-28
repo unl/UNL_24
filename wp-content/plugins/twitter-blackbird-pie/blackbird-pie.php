@@ -309,12 +309,32 @@ class BlackbirdPie {
         <style type='text/css'>
             #bbpBox_$id a { text-decoration:none; }
             #bbpBox_$id a:hover { text-decoration:underline; }
+			#bbpBox_$id.bbpBox > div {
+				background:#fff;
+				padding:10px;
+				margin:0;
+				min-height:48px;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				border-radius:5px;
+				border: 1px dashed #D5D5D5;
+				-moz-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+				-webkit-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+				box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+				-webkit-transition: all 0.55s ease-in-out;
+    			-moz-transition: all 0.55s ease-in-out;
+    			-o-transition: all 0.55s ease-in-out;
+    			-ms-transition: all 0.55s ease-in-out;
+    			transition: all 0.55s ease-in-out; }
+			#bbpBox_$id.bbpBox > div:hover {
+				-moz-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+				-webkit-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+				box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+			}
         </style>
 		
         <div id='bbpBox_$id' class='bbpBox' style='margin-bottom:20px;'>
-            <div style='background:#fff;  padding:10px; margin:0; min-height:48px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border: 1px dashed #D5D5D5; -moz-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
--webkit-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);'>
+            <div>
                 <span style='width:100%; font-size:18px; line-height:22px;'>
                     {$tweet}
                 </span>
