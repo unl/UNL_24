@@ -10,4 +10,31 @@
 .bbp-actions .bbp-retweet-action:hover span em{background-position:-96px 0;}
 .bbp-actions .bbp-favorite-action span em{background-position:-32px 0;}
 .bbp-actions .bbp-favorite-action:hover span em{background-position:-48px 0;}
-.bbp-actions img { margin:0 !important; padding: 0 !important; background:none !important; border:none !important;}
+.bbp-actions img { margin:0 !important; padding: 0 !important; background:none !important; border:none !important; -moz-box-shadow:none !important; -webkit-box-shadow:none !important; box-shadow:none !important;}
+
+/* Scoped CSS from 'blackbird-pie.php' */
+
+div[id*="bbpBox_"] a { text-decoration:none; }
+div[id*="bbpBox_"] a:hover { text-decoration:underline; }
+div[id*="bbpBox_"].bbpBox > div {
+	background:#fff;
+	padding:10px;
+	margin:0;
+	min-height:48px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border: 1px dashed #D5D5D5;
+	-moz-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+	-webkit-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+	box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
+	-webkit-transition: all 0.55s ease-in-out;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -ms-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out; }
+div[id*="bbpBox_"].bbpBox > div:hover {
+	-moz-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+	-webkit-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+	box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+}
