@@ -305,16 +305,10 @@ class BlackbirdPie {
 
         $tweet = $tweet_details['tweet_text'];
 		
-        $tweetHTML = "<!-- tweet id : $id -->
-        <style type='text/css'>
-            #bbpBox_$id a { text-decoration:none; color:#{$profile_link_color}; }
-            #bbpBox_$id a:hover { text-decoration:underline; }
-        </style>
-		
+        $tweetHTML = "<!-- tweet id : $id --> 
+       	
         <div id='bbpBox_$id' class='bbpBox' style='margin-bottom:20px;'>
-            <div style='background:#fff;  padding:10px; margin:0; min-height:48px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; border: 1px dashed #D5D5D5; -moz-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);
--webkit-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);
-box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);'>
+            <div>
                 <span style='width:100%; font-size:18px; line-height:22px;'>
                     {$tweet}
                 </span>
@@ -324,7 +318,7 @@ box-shadow: 0 0 0 5px white, 1px 1px 13px 1px rgba(0, 0, 0, 0.85);'>
                 </div>
                 <div style='float:left; padding:0; margin:0'>
                     <a href='{$profile_url}'>
-                        <img style='width:48px; height:48px; padding-right:7px; border:none; background:none; margin:0' src='{$profile_pic}' />
+                        <img style='-moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; width:48px; height:48px; padding-right:7px; border:none; background:none; margin:0' src='{$profile_pic}' />
                     </a>
                 </div>
                 <div style='float:left; padding:0; margin:0'>
