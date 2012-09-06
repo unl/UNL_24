@@ -957,8 +957,8 @@ define('INSTAGRABBER_DEVELOPER_URL', 'http://instagram.com/developer/');
 				// insert the image inside the post, followed by post caption
 				$update_post_data = array();
 		  		$update_post_data['ID'] = $created_post_ID;
-		  		$update_post_data['post_content'] = '<a href="'.$img->pic_link.'"><img src="'.$image_info[0].'" alt="'.esc_attr(strip_tags($img->caption)).'" width="'.$image_info[1].'" height="'.$image_info[2].'"/></a><br/>'.
-		  											$img->caption;
+		  		$update_post_data['post_content'] = '<a href="'.$img->pic_link.'"><img src="'.$image_info[0].'" alt="'.esc_attr(strip_tags($img->caption)).'" width="'.$image_info[1].'" height="'.$image_info[2].'"/></a><br/><span style="font-size:18px;">'.
+		  											$img->caption . "</span>";
 
 		  		wp_update_post($update_post_data);
 			}

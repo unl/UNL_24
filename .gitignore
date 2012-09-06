@@ -1,5 +1,6 @@
 wp-config.php
 .DS_Store
+wp-content/UNUSED
+wp-content/uploads
 
 /\#UNL24.esproj/*
-/\wp-content/uploads/*
