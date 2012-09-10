@@ -57,7 +57,7 @@ if (strpos(strtoupper($_SERVER['HTTP_USER_AGENT']), 'CHROME')==true)
 
 <script>
 $(document).ready(function(){
-
+	
 	// hide #footer-logo
 	$("#footer-logo").hide();
 	
@@ -123,9 +123,6 @@ $(document).ready(function(){
 			
 		});
 	});
-	
-	
-	
 	
 
 });
