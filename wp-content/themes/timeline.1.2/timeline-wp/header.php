@@ -45,19 +45,12 @@
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/css/all.css" />
 
-<?php 
-if (strpos(strtoupper($_SERVER['HTTP_USER_AGENT']), 'CHROME')==true)
-{?>
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/webkit.css" />
-<?php	
-}
-?>
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/timeline.js"></script>
 
 <script>
 $(document).ready(function(){
-	
+
 	// hide #footer-logo
 	$("#footer-logo").hide();
 	
@@ -123,6 +116,9 @@ $(document).ready(function(){
 			
 		});
 	});
+	
+	
+	
 	
 
 });
