@@ -86,7 +86,8 @@
 	position: absolute !important;
 }
 .entry-title {
-	clear: both;
+	display: inline;
+    clear: both;
 	color: #222;
     font-size: 20px;
     font-weight: bold;
@@ -249,16 +250,18 @@ dl.gallery-item {
 .comment-content img,
 .widget img,
 .wp_bannerize_homepage img{
-   border: 1px solid #C4CDE0;
-	height: auto;
+   border: 1px solid #b8b8b8;
+    border-radius: 2px;
+    height: auto;
     max-width: 100%;
-    padding: 2px;
-	width: 100%;
-	opacity: 1;
-	-moz-transition: opacity 1s ease 0s;
-	-webkit-transition: opacity 1s ease 0s;
-	-o-transition: opacity 1s ease 0s;
-	transition: opacity 1s ease 0s;
+    padding: 0;
+    width: 100%;
+    opacity: 1;
+    box-shadow: 0 0 0 5px white, 1px 1px 10px 2px rgba(0, 0, 0, 0.85);
+    -moz-transition: opacity 1s ease 0s;
+    -webkit-transition: opacity 1s ease 0s;
+    -o-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
 }
 
 // Reset the twitter logo images
@@ -267,8 +270,6 @@ dl.gallery-item {
     max-width: auto;
 }
 
-
-
 .entry-content img:hover,
 .featured-box img:hover,
 .comment-content img:hover,
@@ -276,7 +277,6 @@ dl.gallery-item {
 .wp_bannerize_homepage img:hover {
 	opacity: 0.8;
 }
-
 
 img[class*="align"],
 img[class*="wp--"] {
@@ -287,10 +287,12 @@ img.size-full {
 	width: auto; /* Prevent stretching of full-size s with height and width attributes in IE8 */
 }
 .entry-content img.wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+	border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    width: 15px;
 }
 img.alignleft,
 img.alignright,
@@ -382,6 +384,13 @@ a:active img[class*="wp--"],
 	border-color: #ddd;
 }
 
+img[class*="align"], img[class*="wp--"], #content .gallery .gallery-icon img{
+    border: 1px solid #B5B5B5;
+    border-radius: 2px;
+    box-shadow: 0 0 0 5px white, 1px 1px 10px 1px rgba(0, 0, 0, 0.85);
+    padding: 0;
+}
+
 /* Password Protected Posts */
 .post-password-required .entry-header .comments-link {
 	margin: 1.625em 0 0;
@@ -401,7 +410,7 @@ a:active img[class*="wp--"],
 
 .author-info{
 	border-bottom: 1px solid #E5E5E5;
-    height: 40px;
+    min-height: 40px;
 	font-size: 12px;
 	}
 	
@@ -421,6 +430,7 @@ a:active img[class*="wp--"],
 	color: #999999;
     font-size: 11px;
     line-height: 11px;
+    padding-bottom: 0.2em;
 	}	
 	
 .singular #author-info {
@@ -553,7 +563,7 @@ article.format-status .entry-content {
 	padding: 10px;
 }
 .singular .entry-title {
-	color: #94A0C1;
+	color: #C19494;
 	font-size: 36px;
 	font-weight: bold;
 	padding: 30px 0 0;
