@@ -38,7 +38,7 @@
             <p>University Communications will collect the best content posted to #UNL24 and present it at <a href="http://un24.unl.edu/">unl24.unl.edu</a>.</p>
         
         <h1>Can anyone participate?</h1>
-        <p>Yes! Everyone with a connection to UNL has a story to tell. It all starts on campus, but students, faculty, staff, alumni and friends taketheir UNL ties with them wherever they go. Help us invite more people to share stories to #UNL24. Do you know students studying abroad or alumni or friends of UNL? Tell them about #UNL24 on September 24.</p>
+        <p>Yes! Everyone with a connection to UNL has a story to tell. It all starts on campus, but students, faculty, staff, alumni and friends take their UNL ties with them wherever they go. Help us invite more people to share stories to #UNL24. Do you know students studying abroad or alumni or friends of UNL? Tell them about #UNL24 on September 24.</p>
         
         <h1>How can I submit content for the site?</h1>
         <p>First and foremost, please use social media on September 24 and include #UNL24 in your message. To have content considered for the <a href="http://unl24.unl.edu/">unl24.unl.edu</a> site, use:</p>
@@ -51,7 +51,7 @@
 		<p>We can't promise to include all content that is posted and emailed. Appropriate content that is creative and represents the diversity of life at UNL/UNL connections will be prioritized. Regardless of whether or not your submission is posted to the site, we appreciate all participation.</p>
         
         <h1>Is it anonymous?</h1>
-        <p>If you post content publicly on social media, we'll include your name/handle. If you'd like to submit content anonymously, you can email your content and indicate that you'd like to share anonymously. Through UNL24, we hope to create an authentic look at life with UNL and will prioritize content to beincluded on the site that features real people.</p>
+        <p>If you post content publicly on social media, we'll include your name/handle. If you'd like to submit content anonymously, you can email your content and indicate that you'd like to share anonymously. Through UNL24, we hope to create an authentic look at life with UNL and will prioritize content to be included on the site that features real people.</p>
          <footer><a href="http://unl.edu/"><img src="<?php bloginfo('template_url'); ?>/inc/images/unl-white.png" alt="University of Nebraska-Lincoln" /></a></footer>
         </div>
     </div>
