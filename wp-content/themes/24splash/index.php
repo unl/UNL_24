@@ -7,8 +7,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="inc/css/all.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css' />
+<link type="text/css" media="screen" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>#UNL24</title>
 </head>
@@ -25,7 +25,7 @@
         <h1 class="slogan">Be a part of Day 24.</h1>
         <h3 class="tagline bars">University of Nebraska&mdash;Lincoln</h3>
         <h2 class="tagline share">Share what makes life at UNL amazing</h2>
-        <img class="the-n" style="position:relative; top:465px;" src="inc/images/n-gray.png" alt="N logo"/>
+        <img class="the-n" style="position:relative; top:465px;" src="<?php bloginfo('template_url'); ?>/inc/images/n-gray.png" alt="N logo"/>
         <h2 class="tagline coming">Coming September 24, 2012</h2>
     </div>
     <div class="container bottom">
@@ -52,7 +52,7 @@
         
         <h1>Is it anonymous?</h1>
         <p>If you post content publicly on social media, we'll include your name/handle. If you'd like to submit content anonymously, you can email your content and indicate that you'd like to share anonymously. Through UNL24, we hope to create an authentic look at life with UNL and will prioritize content to beincluded on the site that features real people.</p>
-         <footer><a href="http://unl.edu/"><img src="inc/images/unl-white.png" alt="University of Nebraska-Lincoln" /></a></footer>
+         <footer><a href="http://unl.edu/"><img src="<?php bloginfo('template_url'); ?>/inc/images/unl-white.png" alt="University of Nebraska-Lincoln" /></a></footer>
         </div>
     </div>
 </body>
