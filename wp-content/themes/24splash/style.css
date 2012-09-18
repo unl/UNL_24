@@ -8,3 +8,332 @@ Tags: unl, 24, unl24
 
 This is where the CSS for the theme needs to reside.
 */
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+strong { font-weight: bold; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font Face */
+
+@font-face {
+    font-family: 'Code Regular';
+    src: url('inc/fonts/code_light-webfont.eot');
+    src: url('inc/fonts/code_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('inc/fonts/code_light-webfont.woff') format('woff'),
+         url('inc/fonts/code_light-webfont.ttf') format('truetype'),
+         url('inc/fonts/code_light-webfont.svg#code_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Code Regular';
+    src: url('inc/fonts/code_bold-webfont.eot');
+    src: url('inc/fonts/code_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('inc/fonts/code_bold-webfont.woff') format('woff'),
+         url('inc/fonts/code_bold-webfont.ttf') format('truetype'),
+         url('inc/fonts/code_bold-webfont.svg#code_boldregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
+.container.top {
+	background: #cfcfd3;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NmY2ZkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	
+	background: -moz-radial-gradient(center, ellipse cover,
+				#ffffff 70%, #cfcfd3 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%,
+				color-stop(70%,#ffffff), color-stop(100%,#cfcfd3));
+	background: -webkit-radial-gradient(center, ellipse cover,
+				#ffffff 70%,#cfcfd3 100%);
+	background: -o-radial-gradient(center, ellipse cover,
+				#ffffff 70%,#cfcfd3 100%);
+	background: -ms-radial-gradient(center, ellipse cover,
+				#ffffff 70%,#cfcfd3 100%);
+	background: radial-gradient(ellipse at center,
+				#ffffff 70%,#cfcfd3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#ffffff', endColorstr='#cfcfd3',GradientType=1 );
+	height: 900px;
+	text-align: center;
+	-webkit-box-shadow: 0 5px 20px 0 black;
+	box-shadow: 0 5px 20px 0 black;
+	z-index: 10;
+}
+
+.container.top h1,
+.container.top h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.bubble {
+	background: #A71011;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M0MmUyZiIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhNzEwMTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+	background: -moz-linear-gradient(top,
+				rgba(196,46,47,0.75) 0%, rgba(167,16,17,1) 100%),
+				url(inc/images/bubble-texture.jpg);
+	background: -webkit-gradient(linear, left top, left bottom,
+				color-stop(0%,rgba(196,46,47,0.75)), color-stop(100%,rgba(167,16,17,1))),
+				url(inc/images/bubble-texture.jpg);
+	background: -webkit-linear-gradient(top,
+				rgba(196,46,47,0.75) 0%,rgba(167,16,17,1) 100%),
+				url(inc/images/bubble-texture.jpg);
+	background: -o-linear-gradient(top,
+				rgba(196,46,47,0.75) 0%,rgba(167,16,17,1) 100%),
+				url(inc/images/bubble-texture.jpg);
+	background: -ms-linear-gradient(top,
+				rgba(196,46,47,0.75) 0%,rgba(167,16,17,1) 100%),
+				url(inc/images/bubble-texture.jpg);
+	background: linear-gradient(to bottom,
+				rgba(196,46,47,0.75) 0%,rgba(167,16,17,1) 100%),
+				url(inc/images/bubble-texture.jpg);
+	filter: progid:DXImageTransform.Microsoft.gradient(
+		startColorstr='#bfc42e2f', endColorstr='#a71011',GradientType=0 ),
+				url(inc/images/bubble-texture.jpg);
+	width: 300px;
+	height: 180px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	-webkit-box-shadow: inset 0px 6px 8px rgba(255, 255, 255, 0.5),
+				inset 0px -3px 8px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0px 6px 8px rgba(255, 255, 255, 0.5),
+				inset 0px -3px 8px rgba(0, 0, 0, 0.25);
+	-webkit-box-reflect: below 110px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.06)));
+
+}
+
+.bubble::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-box-shadow: 0 120px 40px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 120px 40px rgba(0, 0, 0, 0.4);
+	width: 300px;
+	height: 20px;
+	-webkit-border-radius: 110px/10px;
+	border-radius: 110px/10px;
+	background: transparent;
+	bottom: 40px;
+}
+
+.bubble > #brand {
+	font-family: 'Code Regular', sans-serif;
+	color: white;
+	font-size: 64pt;
+	line-height: 180px; 
+	position: relative;
+}
+
+.bubble > h1 > div {
+	background: -webkit-gradient(linear, left top, left bottom,
+				color-stop(25%,rgba(255,255,255,1)),
+				color-stop(100%,rgba(204,204,204,1)));
+	background: -webkit-linear-gradient(top,
+				rgba(255,255,255,1) 25%,rgba(204,204,204,1) 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight: normal;
+	letter-spacing: 0.05em;
+    position: absolute; 
+    width: 100%;
+}
+
+.bubble > h1 > div > strong {
+	letter-spacing: -0.01em;
+	font-weight: bold;
+}
+
+.bubble > h1:after {
+    -webkit-text-shadow: 0 0.03em 10px #850000;
+	text-shadow: 0 0.03em 10px #850000;
+    color: transparent;
+}
+
+#brand:after {
+    content: '#UNL24';
+}
+
+#tri {
+	background:url(inc/images/bubble-tri.png) no-repeat;
+	height: 52px;
+	width: 51px;
+	position: absolute;
+	bottom: -46px;
+	right: 40px;
+	-webkit-box-reflect: below 20px
+						-webkit-gradient(linear, left top, left bottom, from(transparent),
+						color-stop(0%, transparent), to(rgba(255, 255, 255, 0.25)));
+}
+
+.slogan, .tagline {
+	position: relative;
+	top: 350px;
+	color: rgba(255, 255, 255, 0.65);
+	text-shadow: 0 -2px 1px rgba(0, 0, 0, 0.35);
+	font-size: 32pt;
+	letter-spacing: -0.05em;
+	font-weight: normal;
+}
+
+.tagline.bars {
+	top: 355px;
+	font-size: 16pt;
+	display: inline-block;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+	letter-spacing: 0.1em;
+	padding: 0.2em;
+	text-transform: uppercase;
+	color: #707070;
+	text-shadow: 0 1px 3px #BBB;
+}
+
+.tagline.share {
+	font-size: 19pt;
+	top: 365px;
+	letter-spacing: 0.02em;
+}
+
+.tagline.coming {
+	top: 480px;
+	font-size: 26pt;
+}
+
+
+.container.bottom { 
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU5NWQ2MyIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+
+	background: -moz-linear-gradient(top,
+				rgba(89,93,99,0.9) 0%, rgba(0,0,0,0.9) 100%),
+				url('inc/images/bg-lines.png') repeat right top;
+	background: -webkit-gradient(linear, left top, left bottom,
+				color-stop(0%,rgba(89,93,99,0.9)), color-stop(100%,rgba(0,0,0,0.9))),
+				url('inc/images/bg-lines.png') repeat right top;
+	background: -webkit-linear-gradient(top,
+				rgba(89,93,99,0.9) 0%,rgba(0,0,0,0.9) 100%),
+				url('inc/images/bg-lines.png') repeat right top;
+	background: -o-linear-gradient(top,
+				rgba(89,93,99,0.9) 0%,rgba(0,0,0,0.9) 100%),
+				url('inc/images/bg-lines.png') repeat right top;
+	background: -ms-linear-gradient(top,
+				rgba(89,93,99,0.9) 0%,rgba(0,0,0,0.9) 100%),
+				url('inc/images/bg-lines.png') repeat right top;
+	background: linear-gradient(to bottom,	
+				rgba(89,93,99,0.9) 0%,rgba(0,0,0,0.9) 100%),
+				url('inc/images/bg-lines.png') repeat right top;
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#e6595d63', endColorstr='#e6000000',GradientType=0 );
+	-webkit-box-shadow: inset 0 -30px 50px 10px black;
+	box-shadow: inset 0 -30px 50px 10px black;
+}
+
+.the-copy {
+	margin: 0 auto;
+	padding: 12px;
+	width: 700px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	padding-bottom: 50px;
+}
+
+.the-copy a:link {
+	color: white;
+	text-decoration: underline;
+}
+
+.the-copy a:hover {
+	text-decoration: none;
+}
+
+.the-copy a:visited {
+	color: #c1c1c1;
+}
+
+.container.bottom > .the-copy h1 {
+	font-family: 'Code Regular', sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	letter-spacing: 0.06em;
+	padding: 0 0.35em;
+	border-left: 4px solid #08AFFF;
+	margin: 0.5em 0;
+}
+
+.container.bottom > .the-copy p {
+	font-size: 13pt;
+	line-height: 150%;
+	padding-bottom: 0.8em;
+}
+
+footer { height: 56px; }
+footer > a img { float: right; }
+
+@media screen and (max-width: 720px) {
+	.the-copy {
+   		width: 90%;
+  	}
+	.the-n {display: none;}
+	.slogan, .tagline { font-size: 28pt; }
+	.tagline.bars { font-size: 14pt; }
+	.tagline.share { font-size: 16pt }
+	.tagline.coming { font-size: 22pt; }
+}
