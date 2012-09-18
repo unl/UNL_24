@@ -114,7 +114,8 @@
 
 					//Add classes to body
 					jQuery('body').attr('class', bodyClasses);
-					
+				
+								
 					// Fetch the scripts
 					$scripts = $dataBody.find('#document-script');
 					if ( $scripts.length ) $scripts.detach();

@@ -186,10 +186,18 @@ footer.entry-meta {
 }
 /*
 *
-* Face book comments for responsive
+* Facebook comments for responsive
 *
 */
 .fb-comments, .fb-comments span, .fb-comments iframe[style] {width: 100% !important;}
+
+/*
+* Facebook Like-box alignment
+*/
+.fb-like-box.fb_iframe_widget {
+    float: right;
+    margin-top: 13px;
+}
 
 dl.gallery-item {
 	margin: 0;
@@ -257,10 +265,11 @@ dl.gallery-item {
     width: 100%;
     opacity: 1;
     box-shadow: 0 0 0 5px white, 1px 1px 10px 2px rgba(0, 0, 0, 0.85);
-    -moz-transition: opacity 1s ease 0s;
-    -webkit-transition: opacity 1s ease 0s;
-    -o-transition: opacity 1s ease 0s;
-    transition: opacity 1s ease 0s;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
 }
 
 // Reset the twitter logo images
@@ -274,7 +283,9 @@ dl.gallery-item {
 .comment-content img:hover,
 .widget img:hover,
 .wp_bannerize_homepage img:hover {
-	opacity: 0.8;
+	-moz-box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
+    -webkit-box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
+	box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
 }
 
 img[class*="align"],
