@@ -28,13 +28,13 @@ div[id*="bbpBox_"].bbpBox > div {
 	-moz-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
 	-webkit-box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
 	box-shadow: 0 0 0 5px white, 1px 1px 12px 0 rgba(0, 0, 0, 0.85);
-	-webkit-transition: all 0.55s ease-in-out;
-    -moz-transition: all 0.55s ease-in-out;
-    -o-transition: all 0.55s ease-in-out;
-    -ms-transition: all 0.55s ease-in-out;
-    transition: all 0.55s ease-in-out; }
+	-webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out; }
 div[id*="bbpBox_"].bbpBox > div:hover {
-	-moz-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
-	-webkit-box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
-	box-shadow: 0 0 0 5px white, 0px 0px 25px 10px rgba(60, 185, 224, 0.65);
+	-moz-box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
+	-webkit-box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
+	box-shadow: 0 0 0 5px white, 0px 0px 25px 5px rgba(60, 185, 224, 0.65);
 }
