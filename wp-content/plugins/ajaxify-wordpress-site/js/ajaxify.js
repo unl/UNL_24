@@ -114,12 +114,8 @@
 
 					//Add classes to body
 					jQuery('body').attr('class', bodyClasses);
-					
-					//Add ids to body
-					alert('Does this work ?');
-					var classToId = jQuery("[class^=page-id-]").attr('class');​
-					jQuery('body').attr('id', classToId);
-									
+				
+								
 					// Fetch the scripts
 					$scripts = $dataBody.find('#document-script');
 					if ( $scripts.length ) $scripts.detach();
