@@ -25,7 +25,7 @@
         <h1 class="slogan">Be a part of Day 24.</h1>
         <h3 class="tagline bars">University of Nebraska&mdash;Lincoln</h3>
         <h2 class="tagline share">Share what makes life at UNL amazing</h2>
-        <img class="the-n" style="position:relative; top:465px;" src="<?php bloginfo('template_url'); ?>/inc/images/n-gray.png" alt="N logo"/>
+        <img class="the-n" style="position:relative; top:465px;" src="<?php bloginfo('template_url'); ?>/inc/images/n-red.png" alt="N logo"/>
         <h2 class="tagline coming">Coming September 24, 2012</h2>
     </div>
     <div class="container bottom">
