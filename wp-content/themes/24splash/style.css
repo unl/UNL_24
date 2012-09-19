@@ -145,6 +145,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(
 		startColorstr='#bfc42e2f', endColorstr='#a71011',GradientType=0 ),
 				url(inc/images/bubble-texture.jpg);
+	border: 1px solid #DB5656;
 	width: 300px;
 	height: 180px;
 	margin: 0 auto;
