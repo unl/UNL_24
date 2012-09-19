@@ -9,7 +9,7 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css' />
 <link type="text/css" media="screen" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
-<link rel="shortcut icon" type="image/x-icon" href="../timeline.1.2/timeline-wp/images/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>#UNL24</title>
 </head>

@@ -67,12 +67,16 @@ function fbGrabber_post_display() {
     	            echo '<img src="' . $item['picture'] . '" alt="' . $item['name'] . '" />';
     	        }
     	        if ($item['name']) {
-    	            echo '<p class="fb_shared_name fb_link">'.$item['name'].'</p>';
+    	            echo '<p class="fb_shared_name"><a href="' . $item['link'] . '" class="fb_story_link">'.$item['name'].'</a></p>';
     	        }
-    	        echo '</div>';
-    	    }
+				echo '<div style="clear:both;"></div>';
+				echo '</div>';
+	 	    }
     	    
     	    echo '</div>';
+			echo '<div class="bbp-actions" style="font-size:12px; width:100%; padding:0; margin-top:1em;">' .
+				 	'<img align="top" src="http://g.etfv.co/http://www.facebook.com"><a style="margin-left: 0.3em;">posted with #UNL24</a>' .
+			     '</div>';
     	    echo '</div>';
     	    echo '<textarea>';
     	        echo '<div class="fb_post_wrap" data-id="'.$item['id'].'">';
@@ -90,12 +94,16 @@ function fbGrabber_post_display() {
         	            echo '<img src="' . $item['picture'] . '" alt="' . $item['name'] . '" />';
         	        }
         	        if ($item['name']) {
-        	            echo '<p class="fb_shared_name fb_link">'.$item['name'].'</p>';
+        	            echo '<p class="fb_shared_name"><a href="' . $item['link'] . '" class="fb_story_link">'.$item['name'].'</a></p>';
         	        }
-        	        echo '</div>';
+					echo '<div style="clear:both;"></div>';
+					echo '</div>';
         	    }
         	    
         	    echo '</div>';
+				echo '<div class="bbp-actions" style="font-size:12px; width:100%; padding:0; margin-top:1em;">' .
+						 '<img align="top" src="http://g.etfv.co/http://www.facebook.com"><a style="margin-left: 0.3em;">posted with #UNL24</a>' .
+				     '</div>';
         	    echo '</div>';
     	    echo '</textarea>';
     	    echo '</li>';

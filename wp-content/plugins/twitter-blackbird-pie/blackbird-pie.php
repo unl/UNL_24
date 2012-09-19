@@ -314,7 +314,7 @@ class BlackbirdPie {
                 </span>
                 <div class='bbp-actions' style='font-size:12px; width:100%; padding:5px 0; margin:0 0 10px 0; border-bottom:1px solid #e6e6e6;'>
                     <img align='top' src='http://g.etfv.co/http://www.twitter.com' />
-                    <a style='margin-left:0.2em;' title='tweeted on {$date}' href='{$url}' target='_blank'>{$time_ago}</a> via {$source}
+                    <a style='margin-left: 0.2em;'>posted with #UNL24</a>
                 </div>
                 <div style='float:left; padding:0; margin:0'>
                     <a href='{$profile_url}'>
