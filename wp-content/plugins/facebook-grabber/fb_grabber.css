@@ -1,0 +1,61 @@
+.admin_fb_list li {
+    border-bottom: 1px solid #ddd;\
+    clear: both;
+    display: block;
+    overflow: auto;
+    padding: 1em 0;
+    line-height: 1.38;
+    font-size: 13px;
+    color: #333;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+.admin_fb_list .fb_post_wrap, .admin_fb_list textarea {
+    float: left;
+    box-sizing: border-box;
+    width: 45%;
+}
+.admin_fb_list .fb_post_wrap {
+    background: #EDEFF4;
+    padding: 1em;
+    border-radius: 3px;
+}
+.admin_fb_list textarea {
+    margin-left: 5%;
+    height: 100px;
+}
+.fb_post {
+    margin-left: 42px;
+}
+.fb_story_link {
+    float: left;
+    margin-right: 5%;
+    width: 20%;
+    margin-bottom: 1em;
+}
+.fb_story_link img {
+    width: 100%;
+    max-width: 100%;
+}
+.fb_message {
+    word-wrap: break-word;
+    margin: 0;
+    margin-bottom: 1em;
+}
+.fb_story_link + .fb_message {
+    width: 75%;
+}
+.fb_user {
+    margin-right: 10px;
+    width: 32px;
+    float: left;
+}
+.fb_username {
+    display: block;
+}
+.fb_user img {
+    width: 32px;
+}
+.fb_link {
+    color: #3b5998;
+    font-weight: bold;
+}
