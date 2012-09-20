@@ -198,6 +198,13 @@ body {
     width: 100%;
 }
 
+.bubble > h1 > div > img {
+	width: 290px;
+	text-align: center;
+	margin-top: 20%;
+}
+
+
 .bubble > h1 > div > strong {
 	letter-spacing: -0.01em;
 	font-weight: bold;
