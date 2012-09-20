@@ -44,8 +44,8 @@
         <h1>How can I submit content for the site?</h1>
         <p>First and foremost, please use social media on September 24 and include #UNL24 in your message. To have content considered for the <a href="http://unl24.unl.edu/">unl24.unl.edu</a> site, use:</p>
         <p><strong>Twitter</strong><br />Make sure your tweets are public!</p>
-        <p><strong>Instagram</strong><br />Send your photos with hashtag #UNL24
-        <p><strong>Facebook</strong><br />Make sure your posts are public – or post content to the UNL page at <a href="http://facebook.com/unl.edu">facebook.com/unl.edu</a></p>
+        <p><strong>Instagram</strong><br />Send your photos with hashtag #UNL24 </p>
+        <p><strong>Facebook</strong><br />Make sure your posts are public </p>
 		<p><strong>Email</strong><br /><a href="mailto:unl24@unl.edu">unl24@unl.edu</a>  Share a story of (100 or fewer words). Send a link to a YouTube video. Or, send photos showing what you love about UNL or how UNL is part of your daily life.</p>
         
         <h1>Will all submitted content be used?</h1>
