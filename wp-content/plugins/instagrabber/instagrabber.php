@@ -957,8 +957,12 @@ define('INSTAGRABBER_DEVELOPER_URL', 'http://instagram.com/developer/');
 				// insert the image inside the post, followed by post caption
 				$update_post_data = array();
 		  		$update_post_data['ID'] = $created_post_ID;
-		  		$update_post_data['post_content'] = '<a href="'.$img->pic_link.'"><img src="'.$image_info[0].'" alt="'.esc_attr(strip_tags($img->caption)).'" width="'.$image_info[1].'" height="'.$image_info[2].'"/></a><br/><span style="font-size:18px;">'.
-		  											$img->caption . "</span>";
+		  		$update_post_data['post_content'] = '<a href="'.$img->pic_link.'">' . '
+													<img src="'.$image_info[0].'" alt="'.esc_attr(strip_tags($img->caption)).'" width="'.$image_info[1].'" height="'.$image_info[2].'"/>' . 
+													'</a>' .
+													'<div class="bbp-actions" style="font-size:12px; width:100%; padding:0; margin-top:-1.5em;">' .
+													'<img align="top" src="http://g.etfv.co/http://instagram.com"><a style="margin-left: 0.5em;">posted with #UNL24</a></div>' .
+													'<span style="display: block; font-size: 18px; padding-top: 0.5em;">'. $img->caption . '</span>';
 
 		  		wp_update_post($update_post_data);
 			}

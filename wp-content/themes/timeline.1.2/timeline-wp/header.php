@@ -41,7 +41,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="shorcut icon" type="image/x-ico" href="images/favicon.ico" />
+<link rel="shorcut icon" type="image/x-ico" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/css/all.css" />
 
