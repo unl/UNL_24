@@ -18,7 +18,8 @@
     	<div class="bubble">
         	<h1 id="brand">
             	<div>
-                	#<strong>UNL24</strong>
+                	<img src="<?php bloginfo('template_url'); ?>/inc/images/Day24.png" alt="#UNL24" />
+                	<!--#<strong>UNL24</strong>-->
                 </div>
             </h1>
             <div id="tri"></div>
