@@ -43,7 +43,7 @@ function fbGrabber_post_display() {
 	}
 	
 	// URL of Facebook Open Graph search. Returns JSON results
-	$graphURL = 'https://graph.facebook.com/search?q=UNL&type=post';
+	$graphURL = 'https://graph.facebook.com/search?q=UNL24&type=post';
 	$graphJSON = json_decode(file_get_contents($graphURL), true);
 	
 	echo '<h1>Public posts associated with #UNL24</h1><p> To use a post, copy the HTML from the corresponding textarea. Next, create a new post by pasting into the editor box. <strong>Make sure you are in the HTML editor mode!</strong></p>';
