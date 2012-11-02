@@ -13,13 +13,12 @@
  */
 
 get_header(); ?>
-
+        <a name="top-content"></a>
 		<section id="primary">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
-            
-				<a name="top-content"></a>
+				
 				<header class="page-header">
 					<h1 class="page-in-title">
                         <?php if ( is_time() ) : ?>
