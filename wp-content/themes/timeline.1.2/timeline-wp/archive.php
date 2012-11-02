@@ -13,7 +13,6 @@
  */
 
 get_header(); ?>
-        <a name="top-content"></a>
 		<section id="primary">
 			<div id="content" role="main">
 
