@@ -170,20 +170,78 @@ $(document).ready(function(){
             <div id="box-scrool-bar">
                 <div class="timeline-scroll-bar">
                     <ul>
-                        <li class="anchor_post_current">
-                            <a id="back-top" class='anchor_post' href="#top">Now</a>
+                        <li>
+                            <a class='anchor_post' href="/00">12a</a>
                         </li>
-                        <?php
-                        global $wpdb;
-                        $sql = "SELECT distinct post_date as date, id
-                        FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc LIMIT 10";
-                        $results = $wpdb->get_results($sql);
-                        foreach($results as $row):
-                            echo "<li>
-                                    <a id='anchor_post_".$row->id."' class='anchor_post' title='".mysql2date("F j, Y h:ia",$row->date)."' href='#post-".$row->id."'>".mysql2date("h:ia",$row->date)."</a>
-                                 </li>";
-                        endforeach;
-                        ?>
+                        <li>
+                            <a class='anchor_post' href="/12">12p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/01">1a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/13">1p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/02">2a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/14">2p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/03">3a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/15">3p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/04">4a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/16">4p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/05">5a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/17">5p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/06">6a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/18">6p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/07">7a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/19">7p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/08">8a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/20">8p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/09">9a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/21">9p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/10">10a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/22">10p</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/11">11a</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/23">11p</a>
+                        </li>
                     </ul>
                 </div><!-- #timeline-scroll-bar -->
             </div><!-- #box-scrool-bar -->
