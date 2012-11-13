@@ -171,76 +171,76 @@ $(document).ready(function(){
                 <div class="timeline-scroll-bar">
                     <ul>
                         <li>
-                            <a class='anchor_post' href="/00">12a</a>
+                            <a class='anchor_post' href="/00/#top-content">12:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/12">12p</a>
+                            <a class='anchor_post' href="/01/#top-content">1:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/01">1a</a>
+                            <a class='anchor_post' href="/02/#top-content">2:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/13">1p</a>
+                            <a class='anchor_post' href="/03/#top-content">3:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/02">2a</a>
+                            <a class='anchor_post' href="/04/#top-content">4:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/14">2p</a>
+                            <a class='anchor_post' href="/05/#top-content">5:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/03">3a</a>
+                            <a class='anchor_post' href="/06/#top-content">6:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/15">3p</a>
+                            <a class='anchor_post' href="/07/#top-content">7:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/04">4a</a>
+                            <a class='anchor_post' href="/08/#top-content">8:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/16">4p</a>
+                            <a class='anchor_post' href="/09/#top-content">9:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/05">5a</a>
+                            <a class='anchor_post' href="/10/#top-content">10:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/17">5p</a>
+                            <a class='anchor_post' href="/11/#top-content">11:00 am</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/06">6a</a>
+                            <a class='anchor_post' href="/12/#top-content">12:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/18">6p</a>
+                            <a class='anchor_post' href="/13/#top-content">1:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/07">7a</a>
+                            <a class='anchor_post' href="/14/#top-content">2:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/19">7p</a>
+                            <a class='anchor_post' href="/15/#top-content">3:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/08">8a</a>
+                            <a class='anchor_post' href="/16/#top-content">4:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/20">8p</a>
+                            <a class='anchor_post' href="/17/#top-content">5:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/09">9a</a>
+                            <a class='anchor_post' href="/18/#top-content">6:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/21">9p</a>
+                            <a class='anchor_post' href="/19/#top-content">7:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/10">10a</a>
+                            <a class='anchor_post' href="/20/#top-content">8:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/22">10p</a>
+                            <a class='anchor_post' href="/21/#top-content">9:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/11">11a</a>
+                            <a class='anchor_post' href="/22/#top-content">10:00 pm</a>
                         </li>
                         <li>
-                            <a class='anchor_post' href="/23">11p</a>
+                            <a class='anchor_post' href="/23/#top-content">11:00 pm</a>
                         </li>
                     </ul>
                 </div><!-- #timeline-scroll-bar -->
