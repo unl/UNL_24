@@ -6,3 +6,5 @@ wp-content/UNUSED/
 wp-content/uploads/
 
 /\#UNL24.esproj/*
+
+/.htaccess
