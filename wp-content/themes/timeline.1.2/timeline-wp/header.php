@@ -170,20 +170,78 @@ $(document).ready(function(){
             <div id="box-scrool-bar">
                 <div class="timeline-scroll-bar">
                     <ul>
-                        <li class="anchor_post_current">
-                            <a id="back-top" class='anchor_post' href="#top">Now</a>
+                        <li>
+                            <a class='anchor_post' href="/00/#top-content">12:00 am</a>
                         </li>
-                        <?php
-                        global $wpdb;
-                        $sql = "SELECT distinct post_date as date, id
-                        FROM wp_posts WHERE post_type='post' and post_status='publish' order by post_date desc LIMIT 10";
-                        $results = $wpdb->get_results($sql);
-                        foreach($results as $row):
-                            echo "<li>
-                                    <a id='anchor_post_".$row->id."' class='anchor_post' title='".mysql2date("F j, Y h:ia",$row->date)."' href='#post-".$row->id."'>".mysql2date("h:ia",$row->date)."</a>
-                                 </li>";
-                        endforeach;
-                        ?>
+                        <li>
+                            <a class='anchor_post' href="/01/#top-content">1:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/02/#top-content">2:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/03/#top-content">3:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/04/#top-content">4:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/05/#top-content">5:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/06/#top-content">6:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/07/#top-content">7:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/08/#top-content">8:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/09/#top-content">9:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/10/#top-content">10:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/11/#top-content">11:00 am</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/12/#top-content">12:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/13/#top-content">1:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/14/#top-content">2:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/15/#top-content">3:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/16/#top-content">4:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/17/#top-content">5:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/18/#top-content">6:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/19/#top-content">7:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/20/#top-content">8:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/21/#top-content">9:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/22/#top-content">10:00 pm</a>
+                        </li>
+                        <li>
+                            <a class='anchor_post' href="/23/#top-content">11:00 pm</a>
+                        </li>
                     </ul>
                 </div><!-- #timeline-scroll-bar -->
             </div><!-- #box-scrool-bar -->
